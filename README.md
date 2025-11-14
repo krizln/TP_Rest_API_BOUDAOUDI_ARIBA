@@ -6,7 +6,10 @@ Le projet a été initialisé avec npm init -y et les dépendances clés (expres
 
 2. Création du Serveur Express
 
-Le fichier index.js a été créé pour servir de point d'entrée. L'application Express a été instanciée et configurée avec les middlewares essentiels : cors() pour autoriser les requêtes externes et express.json() pour parser le corps des requêtes JSON. Une route GET sur / a permis de valider le bon lancement du serveur via npm run dev.
+Le fichier index.js a été créé pour servir de point d'entrée. L'application Express a été instanciée et configurée avec les middlewares essentiels : cors() pour autoriser les requêtes externes et express.json() pour parser le corps des requêtes JSON. Une route GET sur / a permis de valider le bon lancement du serveur via npm run dev : 
+
+<img width="389" height="96" alt="image" src="https://github.com/user-attachments/assets/b9aa657e-0770-4055-b925-6677a986c670" />
+
 
 3. Définition des Routes CRUD
 
