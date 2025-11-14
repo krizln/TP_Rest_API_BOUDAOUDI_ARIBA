@@ -1,4 +1,5 @@
 # TP_Dev_Web_BOUDAOUDI_ARIBA
+# I- Initialisation du projet et première route
 1. Initialisation et Configuration
 
 Le projet a été initialisé avec npm init -y et les dépendances clés (express, sqlite3, cors) ont été installées. Nodemon a été ajouté pour le développement afin d'assurer le rechargement automatique. Un fichier .gitignore a été configuré pour exclure les node_modules, les fichiers .db et .env, garantissant ainsi un dépôt de code propre.
