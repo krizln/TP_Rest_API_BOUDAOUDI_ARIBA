@@ -18,3 +18,11 @@ Le squelette de l'API RESTful a été défini pour la ressource /api/cars. Les r
 4. Validation avec Postman
 
 Tous les endpoints ont été testés à l'aide de Postman. Cet outil a été indispensable pour simuler des requêtes autres que GET. Le test de la route POST, en envoyant un corps JSON, a confirmé que le serveur recevait et comprenait correctement les données. L'ensemble des routes a fonctionné comme attendu, validant l'architecture de l'API avant la connexion à la base de données.
+-> GET toutes les voitures : 
+<img width="638" height="106" alt="image" src="https://github.com/user-attachments/assets/7fa36cf8-6da7-4b41-ab32-b23d4a23325e" />
+-> GET une voiture spécifique :
+<img width="254" height="64" alt="image" src="https://github.com/user-attachments/assets/369e6779-adf8-479c-a7fe-3ad6182d8363" />
+-> POST créer une voiture : 
+<img width="299" height="153" alt="image" src="https://github.com/user-attachments/assets/3a87140b-be92-4497-a065-7b67c8d22c2b" />
+
+
