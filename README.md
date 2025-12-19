@@ -111,7 +111,11 @@ Test Postman :
 
 <img width="800" height="522" alt="image" src="https://github.com/user-attachments/assets/3e9a3ed6-9d4d-450d-a2c8-ef84f5bc5839" />
 
+# V- Documentation et bonnes pratiques
 
+10. Finalisation, documentation et mise en conformité professionnelle
+
+La conclusion du TP a porté sur l'application des bonnes pratiques de développement logiciel. La rédaction d'un fichier README.md exhaustif permet désormais de documenter les prérequis, le processus d'installation et l'ensemble des points d'accès (endpoints) de l'API. Parallèlement, l'utilisation de Git pour le versionnage du code et son hébergement sur GitHub assure la pérennité et la traçabilité du projet. Ce cycle complet, incluant la séparation des responsabilités (MVC), la sécurisation par middleware et la documentation structurée, valide la création d'une API REST fonctionnelle et conforme aux standards actuels de l'industrie.
 
 
 
