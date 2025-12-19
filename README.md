@@ -64,5 +64,34 @@ Test avec Postman :
 
 <img width="818" height="183" alt="image" src="https://github.com/user-attachments/assets/c76261b4-6adb-4a2b-9c8e-c778aef8bcb9" />
 
+# III- Validation fonctionnelle du cycle CRUD via les contrôleurs
+
+La phase finale de tests sur Postman a permis de valider l'intégralité des fonctionnalités de l'API restructurée selon le modèle MVC. En isolant la logique dans usersControllers.js, nous avons constaté une plus grande clarté dans la gestion des réponses JSON, notamment grâce à l'ajout systématique d'un attribut success et de messages de confirmation explicites. Les tests ont couvert le cycle de vie complet d'une ressource : de sa création via POST à sa suppression définitive avec DELETE, en passant par la consultation filtrée par identifiant. Cette approche modulaire confirme la robustesse de l'architecture choisie pour la maintenance et l'évolution future de l'application.
+
+Test : 
+- GET - Récupérer toutes les voitures
+  
+<img width="803" height="322" alt="image" src="https://github.com/user-attachments/assets/6aea465f-a44a-440c-a75a-57a19674c3da" />
+
+- GET - Récupérer une voiture par ID
+
+<img width="802" height="267" alt="image" src="https://github.com/user-attachments/assets/13a76487-7835-4fec-be33-acab170da0bb" />
+
+- POST - Créer une nouvelle voiture
+
+<img width="797" height="238" alt="image" src="https://github.com/user-attachments/assets/be8e6484-4af3-4bcd-9fa0-db4fb7f8c409" />
+
+- PUT - Modifier une voiture
+
+<img width="803" height="498" alt="image" src="https://github.com/user-attachments/assets/20bc4019-95fa-4886-8303-f32a64a96e3e" />
+
+- DELETE - Supprimer une voiture
+
+<img width="390" height="106" alt="image" src="https://github.com/user-attachments/assets/2d1f7b01-f456-4882-87ef-4d46278c3920" />
+
+
+
+
+
 
 
