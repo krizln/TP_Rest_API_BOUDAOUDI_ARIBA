@@ -41,3 +41,28 @@ L'intégration de SQLite a été réalisée via la création du module database.
 
 <img width="286" height="41" alt="image" src="https://github.com/user-attachments/assets/4979d261-00c4-4bda-bb01-c511e935e6f5" />
 
+6. Finalisation du peuplement et validation
+
+L’exécution réussie de la commande npm run seed a marqué la finalisation de la couche de persistance du projet. Après avoir résolu l'erreur de référence dans le script seed.js, la connexion à SQLite a été établie avec succès, permettant le vidage de la table et l’insertion de trois enregistrements complets. Ce succès confirme que la communication entre Node.js et SQLite est parfaitement fonctionnelle et que l'API dispose désormais d'un jeu de données réel pour les tests de consultation.
+
+7. Dynamisation des routes et interconnexion de la base de données
+
+Le fichier index.js a été intégralement mis à jour pour assurer la liaison entre le serveur Express et la base de données SQLite. L'implémentation des méthodes db.all et db.get a permis de transformer les routes de consultation en points d'accès dynamiques, capables d'extraire et de filtrer les données réelles stockées dans le fichier cars.db. Cette étape a également permis de valider la gestion des erreurs HTTP, notamment avec le renvoi d'un code d'état 404 en cas de ressource introuvable, garantissant ainsi la robustesse et la conformité de l'API REST aux standards de développement.
+
+Test avec Postman :
+- GET http://localhost:3000/api/cars :   
+
+<img width="806" height="571" alt="image" src="https://github.com/user-attachments/assets/0405167d-aadd-4dba-852b-40fbc21e8c42" />
+
+
+- GET http://localhost:3000/api/cars/1 :
+
+<img width="809" height="349" alt="image" src="https://github.com/user-attachments/assets/f46ce1bb-5f14-47a0-a225-c9d8c1d3a4fc" />
+
+
+- GET http://localhost:3000/api/cars/999 :
+
+<img width="818" height="183" alt="image" src="https://github.com/user-attachments/assets/c76261b4-6adb-4a2b-9c8e-c778aef8bcb9" />
+
+
+
