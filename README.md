@@ -66,7 +66,9 @@ Test avec Postman :
 
 # III- Validation fonctionnelle du cycle CRUD via les contrôleurs
 
-8. La phase finale de tests sur Postman a permis de valider l'intégralité des fonctionnalités de l'API restructurée selon le modèle MVC. En isolant la logique dans usersControllers.js, nous avons constaté une plus grande clarté dans la gestion des réponses JSON, notamment grâce à l'ajout systématique d'un attribut success et de messages de confirmation explicites. Les tests ont couvert le cycle de vie complet d'une ressource : de sa création via POST à sa suppression définitive avec DELETE, en passant par la consultation filtrée par identifiant. Cette approche modulaire confirme la robustesse de l'architecture choisie pour la maintenance et l'évolution future de l'application.
+8. Sécurisation de l'architecture MVC par Middleware
+
+La phase finale de tests sur Postman a permis de valider l'intégralité des fonctionnalités de l'API restructurée selon le modèle MVC. En isolant la logique dans usersControllers.js, nous avons constaté une plus grande clarté dans la gestion des réponses JSON, notamment grâce à l'ajout systématique d'un attribut success et de messages de confirmation explicites. Les tests ont couvert le cycle de vie complet d'une ressource : de sa création via POST à sa suppression définitive avec DELETE, en passant par la consultation filtrée par identifiant. Cette approche modulaire confirme la robustesse de l'architecture choisie pour la maintenance et l'évolution future de l'application.
 
 Test : 
 - GET - Récupérer toutes les voitures
@@ -88,6 +90,29 @@ Test :
 - DELETE - Supprimer une voiture
 
 <img width="390" height="106" alt="image" src="https://github.com/user-attachments/assets/2d1f7b01-f456-4882-87ef-4d46278c3920" />
+
+# IV- Sécurisation avec middleware
+
+9. Validation expérimentale de la couche de sécurité
+
+Le middleware checkApiKey a été testé selon trois scénarios distincts sur Postman pour valider son efficacité. Sans l'en-tête x-api-key, le serveur a correctement rejeté la requête avec un code 401 (Unauthorized). L'utilisation d'une clé erronée a déclenché une erreur 403 (Forbidden), prouvant que le middleware compare rigoureusement la valeur reçue avec la clé de référence. Enfin, l'envoi de la clé valide a permis d'accéder aux données, comme confirmé par la récupération des informations de la Porsche (ID 1). Ces tests démontrent que l'API est désormais protégée et que seules les requêtes authentifiées peuvent interagir avec la base de données SQLite.
+
+Test Postman :
+
+1. Test : Sans header (Erreur 401)
+
+<img width="814" height="440" alt="image" src="https://github.com/user-attachments/assets/82db09ef-b03b-4d67-b374-3eed2e71e153" />
+
+2. Test : Avec une mauvaise clé (Erreur 403)
+
+<img width="806" height="383" alt="image" src="https://github.com/user-attachments/assets/16af963d-c293-4d1d-8bf7-555d9d095b7d" />
+
+3. Test : Avec la bonne clé (Succès 200)
+
+<img width="800" height="522" alt="image" src="https://github.com/user-attachments/assets/3e9a3ed6-9d4d-450d-a2c8-ef84f5bc5839" />
+
+
+
 
 
 
