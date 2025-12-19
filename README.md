@@ -37,5 +37,7 @@ Tous les endpoints ont été testés à l'aide de Postman. Cet outil a été ind
 5. Mise en place de la base de données
 
 L'intégration de SQLite a été réalisée via la création du module database.js. Ce script gère la connexion au fichier cars.db et automatise la création de la table cars avec son schéma (ID, marque, modèle, etc.) si celle-ci n'existe pas encore. L'importation de ce module dans le point d'entrée index.js permet d'initialiser la base de données dès le démarrage du serveur, assurant ainsi la persistance des données pour les étapes suivantes.
+
+
 <img width="286" height="41" alt="image" src="https://github.com/user-attachments/assets/4979d261-00c4-4bda-bb01-c511e935e6f5" />
 
