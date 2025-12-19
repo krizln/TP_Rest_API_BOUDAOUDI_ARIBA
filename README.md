@@ -66,7 +66,7 @@ Test avec Postman :
 
 # III- Validation fonctionnelle du cycle CRUD via les contrôleurs
 
-La phase finale de tests sur Postman a permis de valider l'intégralité des fonctionnalités de l'API restructurée selon le modèle MVC. En isolant la logique dans usersControllers.js, nous avons constaté une plus grande clarté dans la gestion des réponses JSON, notamment grâce à l'ajout systématique d'un attribut success et de messages de confirmation explicites. Les tests ont couvert le cycle de vie complet d'une ressource : de sa création via POST à sa suppression définitive avec DELETE, en passant par la consultation filtrée par identifiant. Cette approche modulaire confirme la robustesse de l'architecture choisie pour la maintenance et l'évolution future de l'application.
+8. La phase finale de tests sur Postman a permis de valider l'intégralité des fonctionnalités de l'API restructurée selon le modèle MVC. En isolant la logique dans usersControllers.js, nous avons constaté une plus grande clarté dans la gestion des réponses JSON, notamment grâce à l'ajout systématique d'un attribut success et de messages de confirmation explicites. Les tests ont couvert le cycle de vie complet d'une ressource : de sa création via POST à sa suppression définitive avec DELETE, en passant par la consultation filtrée par identifiant. Cette approche modulaire confirme la robustesse de l'architecture choisie pour la maintenance et l'évolution future de l'application.
 
 Test : 
 - GET - Récupérer toutes les voitures
